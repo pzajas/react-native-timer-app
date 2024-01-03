@@ -1,12 +1,11 @@
-import { Text, SafeAreaView } from "react-native";
-import React from "react";
+import { Text, SafeAreaView } from 'react-native'
 
 const App = () => {
   return (
     <SafeAreaView>
       <Text>Timer App</Text>
     </SafeAreaView>
-  );
-};
+  )
+}
 
-export default App;
+export default App
