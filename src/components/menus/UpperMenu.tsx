@@ -1,14 +1,16 @@
-import { StyleSheet, View } from 'react-native'
+import { Pressable, StyleSheet, View } from 'react-native'
 import { Appbar } from 'react-native-paper'
 import Icon from 'react-native-vector-icons/Feather'
 
 export const UpperMenu = () => {
   return (
     <>
-      <Appbar.Header theme={{ colors: 'white' }}>
+      <Appbar.Header>
         <View style={styles.upperMenu}>
           <View style={styles.menuIcon}>
-            <Icon name="menu" size={24} padding={20} color={'black'} />
+            <Pressable onPress={() => console.log('icon clicked')}>
+              <Icon name="menu" size={24} color={'black'} />
+            </Pressable>
           </View>
         </View>
       </Appbar.Header>
