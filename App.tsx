@@ -1,5 +1,6 @@
+import { TimerScreen } from './src/components/screens/TimerScreen'
 import { UpperMenu } from './src/components/menus/UpperMenu'
-import { Text, SafeAreaView } from 'react-native'
+import { SafeAreaView } from 'react-native'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 
 const App = () => {
@@ -7,7 +8,7 @@ const App = () => {
     <SafeAreaProvider>
       <SafeAreaView>
         <UpperMenu />
-        <Text>Timer App</Text>
+        <TimerScreen />
       </SafeAreaView>
     </SafeAreaProvider>
   )
